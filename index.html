@@ -228,7 +228,7 @@
         .category2 {
             background-color: #004c4c;
             width: 80%;
-            border-radius: 1em;
+            border-radius: 0.5em;
             margin: auto;
             margin-bottom: 50px;
             padding-bottom: 10px;
@@ -257,17 +257,21 @@
             background: #00ffff;
             width: 0%;
             height: 5px;
-            border-radius: 0 0 3em 3em;
             transition: 0.5s;
+        }
+
+        .category1::after {
+            border-radius: 0 0 3em 0;
         }
 
         .category2::after {
             right: 0;
+            border-radius: 0 0 0 3em;
         }
 
         .category1:hover::after,
         .category2:hover::after {
-            width: 76vw;
+            width: 100%;
         }
 
         .catname {
