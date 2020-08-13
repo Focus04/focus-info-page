@@ -283,7 +283,9 @@
         #record,
         #avatar,
         #delete,
-        #weather {
+        #weather,
+        #setprefix,
+        #bugreport {
             position: relative;
             width: 450px;
             margin: auto;
@@ -294,7 +296,9 @@
         #record img,
         #avatar img,
         #delete img,
-        #weather img {
+        #weather img,
+        #setprefix img,
+        #bugreport img {
             width: 100%;
             height: 100%;
             border-radius: 1em;
@@ -304,9 +308,12 @@
         #record::after,
         #avatar::after,
         #delete::after,
-        #weather::after {
-            content: "Simply track your members' all time punishments with /record!";
-            font-size: 1.05em;
+        #weather::after,
+        #setprefix::after,
+        #bugreport::after {
+            content: "Track your members' all time punishments with /record!";
+            font-size: 1.1em;
+            font-weight: 700;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -335,17 +342,29 @@
             content: "Get real time weather information with /weather!";
         }
 
+        #setprefix::after {
+            content: "Change your server's prefix with /setprefix!";
+        }
+
+        #bugreport::after {
+            content: "Submit a bug report directly to our support server!";
+        }
+
         #record:hover img,
         #avatar:hover img,
         #delete:hover img,
-        #weather:hover img {
+        #weather:hover img,
+        #setprefix:hover img,
+        #bugreport:hover img {
             filter: blur(2px);
         }
 
         #record:hover::after,
         #avatar:hover::after,
         #delete:hover::after,
-        #weather:hover::after {
+        #weather:hover::after,
+        #setprefix:hover::after,
+        #bugreport:hover::after {
             opacity: 0.85;
         }
 
@@ -425,7 +444,7 @@
 
 <body id="page">
     <div id="title">
-        Focus
+        Focus.
         <div id="menu-wrap">
             <input type="checkbox" id="toggler">
             <div id="hamburger">
@@ -559,6 +578,12 @@
     </div>
     <div id="weather">
         <img src="https://i.imgur.com/aEtcF8a.png">
+    </div>
+    <div id="setprefix">
+        <img src="https://i.imgur.com/3mpZB4m.png">
+    </div>
+    <div id="bugreport">
+        <img src="https://i.imgur.com/YdW8cga.png">
     </div>
     <div id="buttons">
         <a href="https://discordapp.com/oauth2/authorize?client_id=723094801175806024&scope=bot&permissions=268561494"
