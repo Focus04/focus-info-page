@@ -8,14 +8,12 @@
             color: #555555;
             margin: 0;
         }
-
         #menu-wrap {
             position: absolute;
             top: 0;
             right: 0;
             z-index: 1;
         }
-
         #toggler {
             position: absolute;
             top: 10px;
@@ -27,7 +25,6 @@
             opacity: 0;
             cursor: pointer;
         }
-
         #hamburger {
             position: absolute;
             top: 10px;
@@ -43,7 +40,6 @@
             justify-content: center;
             transition: 0.7s;
         }
-
         #lines {
             position: relative;
             width: 100%;
@@ -56,7 +52,6 @@
             justify-content: center;
             transition: 0.4s;
         }
-
         #lines::before,
         #lines::after {
             content: "";
@@ -69,54 +64,43 @@
             border-radius: 1em;
             opacity: 100%;
         }
-
         #lines::after {
             top: 10px;
         }
-
         #toggler:hover+#hamburger {
             background-color: #cccccc;
         }
-
         #toggler:checked,
         #toggler:checked+#hamburger {
             background-color: #cccccc;
             position: fixed;
         }
-
         #toggler:checked+#hamburger #lines {
             transform: rotate(135deg);
         }
-
         #toggler:checked+#hamburger #lines::before,
         #toggler:checked+#hamburger #lines::after {
             top: 0;
             transform: rotate(90deg);
         }
-
         #toggler:checked:hover+#hamburger #lines {
             transform: rotate(225deg);
         }
-
         #toggler:checked~#menu {
             visibility: visible;
         }
-
         #toggler:checked~#menu #bubble {
             transform: scale(1);
             transition: 0.7s;
         }
-
         #toggler:checked~#menu #list-box {
             opacity: 1;
             transition: 0.4s;
         }
-
         #toggler:checked+#invite,
         #toggler:checked+#server {
             z-index: -1;
         }
-
         #menu {
             position: fixed;
             top: 0;
@@ -130,7 +114,6 @@
             align-items: center;
             justify-content: center;
         }
-
         #bubble {
             position: relative;
             background-color: rgba(24, 39, 51, 0.85);
@@ -145,7 +128,6 @@
             transform: scale(0);
             transition: 0.4s;
         }
-
         #list-box {
             position: relative;
             background-color: #cccccc;
@@ -157,7 +139,6 @@
             opacity: 0;
             transition: 0.4s;
         }
-
         #list li {
             list-style: none;
             font-size: 1.5rem;
@@ -165,7 +146,6 @@
             margin-right: 40px;
             transition: 0.4s;
         }
-
         #list li::after {
             content: "";
             position: absolute;
@@ -178,20 +158,16 @@
             transform: scaleX(0);
             transition: 0.4s;
         }
-
         #list li:hover {
             transform: scale(1.1);
         }
-
         #list li:hover::after {
             transform: scaleX(1);
         }
-
         #list a {
             color: #4b4b4b;
             text-decoration: none;
         }
-
         #title {
             background-color: #3bd6c6;
             line-height: 2em;
@@ -200,7 +176,6 @@
             font-weight: 700;
             padding-left: 50px;
         }
-
         #slogan {
             background-color: #bdbdbd;
             width: 45%;
@@ -210,7 +185,6 @@
             font-size: 1em;
             padding-left: 50px;
         }
-
         #features,
         #screens {
             background-color: #bdbdbd;
@@ -223,7 +197,6 @@
             color: #000000;
             text-align: center;
         }
-
         .category1,
         .category2 {
             background-color: #004c4c;
@@ -235,20 +208,16 @@
             color: #cccccc;
             transition: 0.4s;
         }
-
         .category1 {
             border-left: 10px solid #00ffff;
         }
-
         .category2 {
             border-right: 10px solid #00ffff;
         }
-
         .category1:hover,
         .category2:hover {
             transform: scale(1.05);
         }
-
         .category1::after,
         .category2::after {
             content: "";
@@ -259,21 +228,17 @@
             height: 5px;
             transition: 0.5s;
         }
-
         .category1::after {
             border-radius: 0 0 3em 0;
         }
-
         .category2::after {
             right: 0;
             border-radius: 0 0 0 3em;
         }
-
         .category1:hover::after,
         .category2:hover::after {
             width: 100%;
         }
-
         .catname {
             background-color: #00ffff;
             width: 50%;
@@ -284,7 +249,6 @@
             text-align: center;
             color: #555555;
         }
-
         #record,
         #avatar,
         #delete,
@@ -297,7 +261,6 @@
             z-index: 0;
             margin-bottom: 50px;
         }
-
         #record img,
         #avatar img,
         #delete img,
@@ -309,7 +272,6 @@
             border-radius: 1em;
             transition: 0.5s ease;
         }
-
         #record::after,
         #avatar::after,
         #delete::after,
@@ -334,27 +296,21 @@
             color: #cccccc;
             transition: 0.5s;
         }
-
         #avatar::after {
             content: "View one or multiple people's avatar(s) with /avatar!";
         }
-
         #delete::after {
             content: "Get logs whenever someone deletes/edits a message!";
         }
-
         #weather::after {
             content: "Get real time weather information with /weather!";
         }
-
         #setprefix::after {
             content: "Change your server's prefix with /setprefix!";
         }
-
         #bugreport::after {
             content: "Submit a bug report directly to our support server!";
         }
-
         #record:hover img,
         #avatar:hover img,
         #delete:hover img,
@@ -363,7 +319,6 @@
         #bugreport:hover img {
             filter: blur(2px);
         }
-
         #record:hover::after,
         #avatar:hover::after,
         #delete:hover::after,
@@ -372,14 +327,12 @@
         #bugreport:hover::after {
             opacity: 0.85;
         }
-
         #bottom {
             bottom: 0;
             height: 5em;
             background-color: #2b2b2b;
             margin-top: 85px;
         }
-
         #buttons {
             position: relative;
             z-index: 0;
@@ -388,11 +341,9 @@
             margin: auto;
             transition: 0.4s;
         }
-
         #buttons:hover {
             transform: scale(1.1);
         }
-
         #invite,
         #server {
             background-color: #cccccc;
@@ -405,22 +356,18 @@
             z-index: 1;
             overflow: hidden;
         }
-
         #invite {
             border-right: 1px solid #4b4b4b;
             border-radius: 1em 0 0 1em;
         }
-
         #server {
             border-left: 1px solid #4b4b4b;
             border-radius: 0 1em 1em 0;
         }
-
         #invite h2,
         #server h2 {
             transition: 0.8s;
         }
-
         #invite::before,
         #server::before {
             content: "";
@@ -434,12 +381,10 @@
             background-color: #00ffff;
             transition: 0.8s;
         }
-
         #invite:hover::before,
         #server:hover::before {
             height: 180%;
         }
-
         #invite:hover h2,
         #server:hover h2 {
             transform: scale(1.1);
