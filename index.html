@@ -2,9 +2,11 @@
 <html>
 
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;600&display=swap" rel="stylesheet">
     <style type="text/css">
         #page {
             background-image: linear-gradient(to bottom right, LightCyan, LightSkyBlue);
+            font-family: 'Karla', sans-serif;
             color: #4f4f4f;
             margin: 0;
         }
@@ -197,47 +199,19 @@
             color: #000000;
             text-align: center;
         }
-        .category1,
-        .category2 {
+        .category {
             background-color: #004c4c;
             width: 80%;
             border-radius: 0.5em;
+            border-left: 5px solid #00ffff;
             margin: auto;
             margin-bottom: 50px;
             padding-bottom: 10px;
             color: #cccccc;
-            transition: 0.4s;
+            transition: 0.3s;
         }
-        .category1 {
-            border-left: 10px solid #00ffff;
-        }
-        .category2 {
-            border-right: 10px solid #00ffff;
-        }
-        .category1:hover,
-        .category2:hover {
-            transform: scale(1.05);
-        }
-        .category1::after,
-        .category2::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            background: #00ffff;
-            width: 0%;
-            height: 5px;
-            transition: 0.5s;
-        }
-        .category1::after {
-            border-radius: 0 0 3em 0;
-        }
-        .category2::after {
-            right: 0;
-            border-radius: 0 0 0 3em;
-        }
-        .category1:hover::after,
-        .category2:hover::after {
-            width: 100%;
+        .category:hover {
+            border-left: 15px solid #00ffff;
         }
         .catname {
             background-color: #00ffff;
@@ -429,7 +403,7 @@
     <div id="features">
         <h2>Bot Features</h2>
     </div>
-    <div class="category1">
+    <div class="category">
         <div class="catname">
             <img src="https://i.imgur.com/ncnSp4q.png?1">
             Staff Commands
@@ -450,7 +424,7 @@
             <li>clear - Bulk deletes a certain amount of messages.</li>
         </ul>
     </div>
-    <div class="category2">
+    <div class="category">
         <div class="catname">
             <img src="https://i.imgur.com/l1rIZHR.png?1">
             Info Commands
@@ -462,7 +436,7 @@
             <li>avatar - Displays the avatar(s) of certain users.</li>
         </ul>
     </div>
-    <div class="category1">
+    <div class="category">
         <div class="catname">
             <img src="https://i.imgur.com/tsV2yj8.png?1">
             Logging Commands
@@ -472,7 +446,7 @@
             <li>togglemsglogs - Toggles message logs on/off.</li>
         </ul>
     </div>
-    <div class="category2">
+    <div class="category">
         <div class="catname">
             <img src="https://i.imgur.com/mA19VqN.png?1">
             Welcome Commands
@@ -488,7 +462,7 @@
             <li>toggleleavemsg - Toggles leave messages on/off.</li>
         </ul>
     </div>
-    <div class="category1">
+    <div class="category">
         <div class="catname">
             <img src="https://i.imgur.com/JGHECHh.png?1">
             Fun Commands
@@ -501,7 +475,7 @@
             <li>nasanews - Looks up a term on NASA's website.</li>
         </ul>
     </div>
-    <div class="category2">
+    <div class="category">
         <div class="catname">
             <img src="https://i.imgur.com/B3WMvaL.png?1">
             Debug Commands
