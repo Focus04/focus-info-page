@@ -183,8 +183,6 @@
     }
     #slogan {
       background-color: #bdbdbd;
-      width: 45%;
-      border-bottom-right-radius: 1em;
       line-height: 2em;
       font-weight: 600;
       font-size: 1em;
@@ -211,10 +209,10 @@
       margin-bottom: 50px;
       padding-bottom: 10px;
       color: #cccccc;
-      transition: 0.3s;
+      transition: 0.1s;
     }
     .category:hover {
-      border-left: 15px solid #00ffff;
+      border-left: 10px solid #00ffff;
     }
     .catname {
       background-color: #00ffff;
@@ -306,12 +304,8 @@
       position: relative;
       z-index: 0;
       margin-top: 100px;
-      width: 65%;
+      width: 75%;
       margin: auto;
-      transition: 0.4s;
-    }
-    #buttons:hover {
-      transform: scale(1.1);
     }
     #invite,
     #server {
@@ -333,10 +327,6 @@
       border-left: 1px solid #4b4b4b;
       border-radius: 0 1em 1em 0;
     }
-    #invite h2,
-    #server h2 {
-      transition: 0.8s;
-    }
     #invite::before,
     #server::before {
       content: "";
@@ -354,9 +344,22 @@
     #server:hover::before {
       height: 180%;
     }
-    #invite:hover h2,
-    #server:hover h2 {
-      transform: scale(1.1);
+    @media(min-width: 900px) {
+      #slogan {
+        width: 25%;
+        border-bottom-right-radius: 1em;
+      }
+    }
+    @media(max-width: 900px) {
+      #slogan {
+        width: 50%;
+        border-bottom-right-radius: 1em;
+      }
+    }
+    @media(max-width: 500px) {
+      #slogan {
+        width: 100%;
+      }
     }
   </style>
 </head>
