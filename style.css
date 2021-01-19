@@ -298,6 +298,10 @@ h3 {
   color: #426696;
   font-weight: 600;
   opacity: 0.8;
+  transition: 0.4s;
+}
+.card:hover {
+  background: linear-gradient(to left top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1))
 }
 #bottom {
   bottom: 0;
