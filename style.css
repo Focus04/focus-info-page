@@ -1,0 +1,322 @@
+h1 {
+  color: #426696;
+  font-size: 3rem;
+  opacity: 0.8;
+}
+h2,
+p {
+  color: #658ec6;
+  opacity: 0.8;
+}
+h3 {
+  color: #426696;
+  opacity: 0.8;
+}
+#page {
+  background-image: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  font-family: 'Karla', sans-serif;
+  color: #4f4f4f;
+  margin: 0;
+  position: relative;
+}
+#menu-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+#toggler {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 5;
+  width: 40px;
+  height: 40px;
+  margin: 0.5em;
+  opacity: 0;
+  cursor: pointer;
+}
+#hamburger {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 4;
+  width: 20px;
+  height: 20px;
+  padding: 1rem;
+  background-color: rgb(59, 214, 198);
+  border-radius: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.7s;
+}
+#lines {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  background-color: #4b4b4b;
+  border-radius: 1em;
+  opacity: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+}
+#lines::before,
+#lines::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  z-index: 1;
+  width: 100%;
+  height: 4px;
+  background-color: #4b4b4b;
+  border-radius: 1em;
+  opacity: 100%;
+}
+#lines::after {
+  top: 10px;
+}
+#toggler:hover+#hamburger {
+  background-color: #cccccc;
+}
+#toggler:checked,
+#toggler:checked+#hamburger {
+  background-color: #cccccc;
+  position: fixed;
+}
+#toggler:checked+#hamburger #lines {
+  transform: rotate(135deg);
+}
+#toggler:checked+#hamburger #lines::before,
+#toggler:checked+#hamburger #lines::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#toggler:checked:hover+#hamburger #lines {
+  transform: rotate(225deg);
+}
+#toggler:checked~#menu {
+  visibility: visible;
+}
+#toggler:checked~#menu #bubble {
+  transform: scale(1);
+  transition: 0.7s;
+}
+#toggler:checked~#menu #list-box {
+  opacity: 1;
+  transition: 0.4s;
+}
+#toggler:checked+#invite,
+#toggler:checked+#server {
+  z-index: -1;
+}
+#menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#bubble {
+  position: relative;
+  background-color: rgba(24, 39, 51, 0.85);
+  backdrop-filter: blur(0.75rem);
+  border-radius: 50%;
+  width: 200vw;
+  height: 200vw;
+  z-index: 3;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: 0.4s;
+}
+#list-box {
+  position: relative;
+  background: linear-gradient(to left top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
+  border-radius: 1em;
+  text-align: center;
+  max-width: 90vw;
+  max-height: 90vw;
+  opacity: 0;
+  transition: 0.4s;
+}
+#list li {
+  list-style: none;
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin-right: 40px;
+  transition: 0.4s;
+}
+#list li::after {
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  background-color: #00ffff;
+  border-radius: 2em;
+  height: 5px;
+  width: 100%;
+  transform: scaleX(0);
+  transition: 0.4s;
+}
+#list li:hover {
+  transform: scale(1.1);
+}
+#list li:hover::after {
+  transform: scaleX(1);
+}
+#list a {
+  color: #4b4b4b;
+  text-decoration: none;
+}
+#title {
+  background-color: #3bd6c6;
+  line-height: 2em;
+  border-bottom: #bdbdbd solid 5px;
+  font-size: 2em;
+  font-weight: 700;
+  padding-left: 50px;
+}
+#slogan {
+  background-color: #bdbdbd;
+  border-bottom-right-radius: 1em;
+  width: 50%;
+  line-height: 2em;
+  font-weight: 600;
+  font-size: 1em;
+  padding-left: 50px;
+}
+#features,
+#screens {
+  background-color: #bdbdbd;
+  margin: auto;
+  width: 40%;
+  line-height: 3em;
+  border-radius: 1em;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #000000;
+  text-align: center;
+}
+.category {
+  background: #ffffff;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  backdrop-filter: blur(2rem);
+  width: 80%;
+  border-radius: 2rem;
+  margin: auto;
+  margin-bottom: 50px;
+  color: #cccccc;
+  display: flex;
+}
+.showcase {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 30%;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  border-radius: 2rem;
+}
+.icon {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+}
+.icon img {
+  width: 25px;
+}
+.picture img {
+  margin: 2rem;
+  width: 80%;
+  border-radius: 1rem;
+}
+.description {
+  width: 70%;
+  padding: 0rem 1rem;
+  margin: 2rem;
+  background-image: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  border-radius: 2rem;
+  color: #ffffff;
+}
+.description h2 {
+  color: #ffffff;
+}
+.commands {
+  width: 70%;
+}
+.title {
+  margin: 2rem;
+}
+.card {
+  margin: 1rem 2rem;
+  display: flex;
+  background: linear-gradient(to left top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
+  border-radius: 1rem;
+  box-shadow: 6px, 6px, 20px rgba(122, 122, 122, 0.2);
+  color: #426696;
+  font-weight: 600;
+  opacity: 0.8;
+}
+#bottom {
+  bottom: 0;
+  height: 5em;
+  background-color: #2b2b2b;
+  margin-top: 85px;
+}
+#buttons {
+  position: relative;
+  z-index: 0;
+  margin-top: 100px;
+  width: 75%;
+  margin: auto;
+}
+#invite,
+#server {
+  background-color: #cccccc;
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  color: #000000;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+#invite {
+  border-right: 1px solid #4b4b4b;
+  border-radius: 1em 0 0 1em;
+}
+#server {
+  border-left: 1px solid #4b4b4b;
+  border-radius: 0 1em 1em 0;
+}
+#invite::before,
+#server::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  border-radius: 0 0 50% 50%;
+  width: 100%;
+  height: 0%;
+  background-color: #00ffff;
+  transition: 0.8s;
+}
+#invite:hover::before,
+#server:hover::before {
+  height: 180%;
+}
