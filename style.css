@@ -12,6 +12,41 @@ h3 {
   color: #426696;
   opacity: 0.8;
 }
+.circle1,
+.circle2,
+.circle3,
+.circle4,
+.circle5,
+.circle6 {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background: linear-gradient(to left top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  z-index: -1;
+}
+.circle2 {
+  top: 21%;
+  left: 3%
+}
+.circle3 {
+  top: 33%;
+  right: 3%;
+}
+.circle4 {
+  top: 52%;
+  left: 3%;
+}
+.circle5 {
+  top: 67%;
+  right: 3%;
+}
+.circle6 {
+  top: 80%;
+  left: 3%;
+}
 #page {
   background-image: linear-gradient(to right top, #65dfc9, #6cdbeb);
   font-family: 'Karla', sans-serif;
@@ -143,17 +178,18 @@ h3 {
 #list-box {
   position: relative;
   background: linear-gradient(to left top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
+  border: solid 2px #ffffff;
   border-radius: 1em;
   text-align: center;
   max-width: 90vw;
-  max-height: 90vw;
+  max-height: 70vw;
   opacity: 0;
   transition: 0.4s;
 }
 #list li {
   list-style: none;
   font-size: 1.5rem;
-  padding: 1rem;
+  padding: 0.1rem;
   margin-right: 40px;
   transition: 0.4s;
 }
@@ -314,7 +350,7 @@ h3 {
   width: 100%;
   height: 0%;
   background-color: #00ffff;
-  transition: 0.8s;
+  transition: 0.4s;
 }
 #invite:hover::before,
 #server:hover::before {
