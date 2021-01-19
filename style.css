@@ -182,14 +182,13 @@ h3 {
   border-radius: 1em;
   text-align: center;
   max-width: 90vw;
-  max-height: 70vw;
+  max-height: 60vw;
   opacity: 0;
   transition: 0.4s;
 }
 #list li {
   list-style: none;
   font-size: 1.5rem;
-  padding: 0.1rem;
   margin-right: 40px;
   transition: 0.4s;
 }
@@ -235,7 +234,7 @@ h3 {
 #features {
   background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
   padding: 0.5rem;
-  width: 33%;
+  width: 50%;
   border-radius: 2rem;
   margin: auto;
   margin-top: 50px;
@@ -260,7 +259,6 @@ h3 {
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
-  width: 30%;
   background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
   border-radius: 2rem;
 }
@@ -273,17 +271,14 @@ h3 {
   width: 25px;
 }
 .picture img {
-  margin: 2rem;
   width: 80%;
   border-radius: 1rem;
 }
 .description {
-  width: 70%;
   padding: 0rem 1rem;
   margin: 2rem;
   background-image: linear-gradient(to right top, #65dfc9, #6cdbeb);
   border-radius: 2rem;
-  color: #ffffff;
 }
 .description h2 {
   color: #ffffff;
@@ -308,7 +303,7 @@ h3 {
   bottom: 0;
   height: 5em;
   background-color: #2b2b2b;
-  margin-top: 85px;
+  margin-top: 80px;
 }
 #buttons {
   position: relative;
@@ -352,4 +347,12 @@ h3 {
 #invite:hover::before,
 #server:hover::before {
   height: 180%;
+}
+@media (max-width: 700px) {
+  .showcase {
+    display: none;
+  }
+  .commands {
+    width: 100%;
+  }
 }
