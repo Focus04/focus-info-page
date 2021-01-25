@@ -62,6 +62,10 @@ h3 {
 .top-icons a {
   text-decoration: none;
   color: #4b4b4b;
+  transition: 0.4s;
+}
+.top-icons a:hover {
+  color: rgba(255, 255, 255, 0.5);
 }
 .top-icons i {
   margin: 8px;
@@ -194,13 +198,12 @@ h3 {
   border-radius: 1em;
   text-align: center;
   max-width: 90vw;
-  max-height: 60vw;
+  max-height: 90vw;
   opacity: 0;
   transition: 0.4s;
 }
 #list li {
   list-style: none;
-  font-size: 1.5rem;
   margin-right: 40px;
   transition: 0.4s;
 }
