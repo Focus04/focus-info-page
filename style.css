@@ -221,15 +221,17 @@ h3 {
   font-size: 2em;
   font-weight: 700;
   padding-left: 50px;
+  letter-spacing: 5px;
 }
 #slogan {
   background-color: #bdbdbd;
   border-bottom-right-radius: 1em;
-  width: 50%;
+  width: 66%;
   line-height: 2em;
   font-weight: 600;
   font-size: 1em;
   padding-left: 50px;
+  letter-spacing: 3px;
 }
 #features {
   background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
