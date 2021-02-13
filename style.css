@@ -8,7 +8,8 @@ p {
   color: #658ec6;
   opacity: 0.8;
 }
-h3 {
+h3,
+h4 {
   color: #426696;
   opacity: 0.8;
 }
@@ -221,7 +222,6 @@ h3 {
   font-size: 2em;
   font-weight: 700;
   padding-left: 50px;
-  letter-spacing: 5px;
 }
 #slogan {
   background-color: #bdbdbd;
@@ -231,7 +231,6 @@ h3 {
   font-weight: 600;
   font-size: 1em;
   padding-left: 50px;
-  letter-spacing: 3px;
 }
 #features {
   background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
