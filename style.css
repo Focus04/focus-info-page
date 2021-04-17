@@ -1,16 +1,17 @@
+:root {
+  --circle-grad: linear-gradient(to left top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
+  --background-grad: linear-gradient(to right top, #65dfc9, #6cdbeb);
+}
 h1 {
   color: #426696;
   font-size: 3rem;
   opacity: 0.8;
 }
 h2,
+h3,
+h4,
 p {
   color: #658ec6;
-  opacity: 0.8;
-}
-h3,
-h4 {
-  color: #426696;
   opacity: 0.8;
 }
 .circle1,
@@ -22,7 +23,7 @@ h4 {
   width: 20rem;
   height: 20rem;
   border-radius: 50%;
-  background: linear-gradient(to left top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
+  background: var(--circle-grad);
   position: absolute;
   top: 90%;
   right: 3%;
@@ -49,7 +50,7 @@ h4 {
   left: 3%;
 }
 #page {
-  background-image: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  background-image: var(--background-grad);
   font-family: 'Karla', sans-serif;
   color: #4f4f4f;
   margin: 0;
@@ -135,7 +136,7 @@ h4 {
 }
 #toggler:checked,
 #toggler:checked+#hamburger {
-  background: linear-gradient(to left top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
+  background: var(--circle-grad);
   position: fixed;
 }
 #toggler:checked+#hamburger #lines {
@@ -180,7 +181,6 @@ h4 {
 #bubble {
   position: relative;
   background-color: rgba(24, 39, 51, 0.85);
-  backdrop-filter: blur(2rem);
   border-radius: 50%;
   width: 400vw;
   height: 400vw;
@@ -194,7 +194,7 @@ h4 {
 }
 #list-box {
   position: relative;
-  background: linear-gradient(to left top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
+  background: var(--circle-grad);
   border: solid 2px #ffffff;
   border-radius: 1em;
   text-align: center;
@@ -233,7 +233,7 @@ h4 {
   padding-left: 50px;
 }
 #features {
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  background: var(--circle-grad);
   padding: 0.5rem;
   width: 50%;
   border-radius: 2rem;
@@ -244,7 +244,7 @@ h4 {
 }
 .category {
   background: #ffffff;
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  background: var(--circle-grad);
   backdrop-filter: blur(2rem);
   width: 80%;
   border-radius: 2rem;
@@ -260,7 +260,7 @@ h4 {
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  background: var(--circle-grad);
   border-radius: 2rem;
 }
 .icon {
@@ -281,7 +281,7 @@ h4 {
 .description {
   padding: 0rem 1rem;
   margin: 2rem;
-  background-image: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  background-image: var(--background-grad);
   border-radius: 2rem;
   transition: 0.4s;
 }
@@ -307,10 +307,6 @@ h4 {
 }
 .card:hover {
   background: rgba(255, 255, 255, 0.8);
-  transform: translateY(-0.5em) scale(1.01);
-}
-.picture:hover,
-.description:hover {
   transform: translateY(-0.5em) scale(1.01);
 }
 #bottom {
@@ -355,7 +351,7 @@ h4 {
   border-radius: 0 0 50% 50%;
   width: 100%;
   height: 0%;
-  background-image: linear-gradient(to right top, #4affde, #2ebbd1);
+  background-image: var(--background-grad);
   transition: 0.4s;
 }
 #invite:hover::before,
